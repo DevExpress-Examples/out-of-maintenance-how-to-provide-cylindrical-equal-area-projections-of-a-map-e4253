@@ -1,0 +1,42 @@
+﻿<Window x:Class="AvoidMapDistortion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
+        Title="MainWindow" Height="380" Width="490" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="180" />
+        </Grid.ColumnDefinitions>
+        <dxm:MapControl  Grid.Row="0" Grid.Column="0">
+            <dxm:MapControl.ZoomTrackbarOptions>
+                <dxm:ZoomTrackbarOptions Visible="False"/>
+            </dxm:MapControl.ZoomTrackbarOptions>
+            <dxm:MapControl.ScrollButtonsOptions>
+                <dxm:ScrollButtonsOptions Visible="False"/>
+            </dxm:MapControl.ScrollButtonsOptions>
+            <dxm:MapControl.ScalePanelOptions>
+                <dxm:ScalePanelOptions Visible="False"/>
+            </dxm:MapControl.ScalePanelOptions>
+            <dxm:MapControl.CoordinatesPanelOptions>
+                <dxm:CoordinatesPanelOptions Visible="False"/>
+            </dxm:MapControl.CoordinatesPanelOptions>
+            <dxm:VectorLayer Name="vectorlayer">
+                <dxm:VectorLayer.MapProjection>
+                    <dxm:EqualAreaProjection/>
+                </dxm:VectorLayer.MapProjection>
+                <dxm:VectorLayer.ShapeLoader>
+                    <dxm:ShapefileLoader   
+                         FileUri="/AvoidMapDistortion;component/Shapefiles/Countries.shp"/>
+                </dxm:VectorLayer.ShapeLoader>
+            </dxm:VectorLayer>
+        </dxm:MapControl>
+        <WrapPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" >
+            <RadioButton Content="Lambert" IsChecked="True" Checked="RadioButton_Lambert" />
+            <RadioButton Content="Behrmann" Checked="RadioButton_Behrmann" />
+            <RadioButton Content="Tristan Edwards" Checked="RadioButton_Edwards" />
+            <RadioButton Content="Peters" Checked="RadioButton_Peters" />
+            <RadioButton Content="Balthasart" Checked="RadioButton_Balthasart" />
+        </WrapPanel>
+    </Grid>
+</Window>
