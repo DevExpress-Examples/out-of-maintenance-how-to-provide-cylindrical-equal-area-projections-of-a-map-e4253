@@ -1,4 +1,4 @@
-﻿<Window x:Class="AvoidMapDistortion.MainWindow"
+<Window x:Class="AvoidMapDistortion.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
