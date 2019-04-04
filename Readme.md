@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/AvoidMapDistortion/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/AvoidMapDistortion/MainWindow.xaml))
-* **[MainWindow.xaml.cs](./CS/AvoidMapDistortion/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/AvoidMapDistortion/MainWindow.xaml))**
+* **[MainWindow.xaml.cs](./CS/AvoidMapDistortion/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/AvoidMapDistortion/MainWindow.xaml.vb))**
 <!-- default file list end -->
 # How to provide cylindrical equal-area projections of a map
 
