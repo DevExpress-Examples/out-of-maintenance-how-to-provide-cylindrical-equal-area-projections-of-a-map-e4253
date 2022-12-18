@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to provide cylindrical equal-area projections of a map
 ' 
 ' This example illustrates how to get map equal-area projections (Lambert,
@@ -18,20 +18,15 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E4253
-
-Imports System
-Imports System.Collections.Generic
-Imports System.Configuration
-Imports System.Data
-Imports System.Linq
 Imports System.Windows
 
 Namespace AvoidMapDistortion
-	''' <summary>
-	''' Interaction logic for App.xaml
-	''' </summary>
-	Partial Public Class App
-		Inherits Application
 
-	End Class
+    ''' <summary>
+    ''' Interaction logic for App.xaml
+    ''' </summary>
+    Public Partial Class App
+        Inherits Application
+
+    End Class
 End Namespace
